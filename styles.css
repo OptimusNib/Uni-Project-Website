@@ -1,0 +1,316 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@font-face {
+  font-family: '3dumbregular';
+  src: url('3Dumb-webfont.eot');
+  src: url('3Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+       url('3Dumb-webfont.woff2') format('woff2'),
+       url('3Dumb-webfont.woff') format('woff'),
+       url('3Dumb-webfont.ttf') format('truetype'),
+       url('3Dumb-webfont.svg#3dumbregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+/* Background Image CSS */
+body{
+  
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+
+
+
+  /* height: fit-content; */
+}
+
+/* .bkg {
+  position: absolute;
+  height: 100vw;
+  margin-top: -200px;
+  z-index: -1;
+  background-color: red;
+}
+
+.bkg-image {
+  height: 100vw;
+} */
+
+/* Default CSS for All Elements */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Introduction/Heading for each page */
+.intro {
+  font-family: '3dumbregular';
+  font-size: 50px;
+  font-size: calc(1rem + 1vw);
+}
+
+.intro {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-right: 80px;
+  padding-left: 80px;
+  text-align: center;
+}
+
+
+/* Navigation Bar CSS */
+nav.main .logo {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: block;
+}
+
+.logo{
+  font-family: '3dumbregular';
+  text-transform: uppercase;
+  color: black;
+  
+}
+
+header nav {
+    list-style: none;
+    color: #252525;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+header ul a {
+    display: block;
+}
+
+header ul a:hover {
+    background-color: turquoise;
+    text-decoration-line: underline;
+    border-radius: 8px;
+  
+}
+
+header nav {
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px #252525;
+    border-radius: 1px 1px 10px 10px;
+}
+header nav {
+    font-family: 'Bubblegum Sans';
+  }
+
+.active {
+    font-weight: 700;
+    text-shadow: 1px 1px darkgrey;
+}
+
+header nav ul li {
+  border: 1px solid skyblue;
+  margin-inline: 5px;
+  background-color: skyblue;
+  border-radius: 8px;
+
+}
+
+/* Breadcrumbs Navigation Bar */
+.breadcrumb,
+.breadcrumb ul {
+  display: flex;
+  justify-content: center;
+  padding: 2px 1rem;
+  align-items: center;
+}
+
+.breadcrumb h2,
+.breadcrumb li {
+  font-family: 'Bubblegum Sans';
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: black;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  padding-left: 0.75em;
+}
+
+.breadcrumb a {
+  color: #000;
+  
+
+}
+
+.breadcrumb li:not([aria-current])::after {
+
+  content: "⟶"/ "";
+  margin: 0 0.25em;
+}
+
+/* Home page buttons CSS */
+.buttons{
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: lightgrey;
+}
+
+.buttons img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  min-width: 300px;
+  
+}
+
+.buttons a{
+  padding: 40px
+}
+
+.home-style img {
+  width: 450px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  min-width: 300px;
+}
+
+/* About Page CSS */
+.about-us h1 {
+  font-family: '3dumbregular';
+  text-align: center;
+  font-size: 50px;
+  
+}
+.about-us {
+  padding: 80px;
+  font-size: calc(1rem + 1vw); 
+}
+
+.about-us h2 {
+  font-family: '3dumbregular';
+  text-align: left;
+  font-size: 30px;
+}
+
+.about-us p{
+  font-family: 'Bubblegum Sans';
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Category Pages CSS */
+.options {
+  width: 600px;
+  border: 4px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+.option-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 10vh;  */
+  margin-inline: 0px;
+  padding-inline: 0px;
+}
+
+.info-style p {
+  font-family: 'Bubblegum Sans';
+  text-align: center;
+  
+}
+
+.info-style {
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 420px;
+  border-radius: 40px;
+  border: 2px solid black;
+  margin: auto;
+  background: white;
+}
+
+/* Footer CSS */
+.foot {
+  background-color: red;
+}
+
+
+
+/* Responsive Media CSS */
+@media (min-width: 800px) {
+    header nav {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header nav li {
+      display: block;
+      height: 100%;
+    }
+  
+    header nav ul {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+  }
+
+  @media (max-width: 510px) {
+    .option-buttons {
+      min-width: 100px;
+    }
+  }
+
+  /* @media (max-width: 1200px) {
+    .option-buttons {
+      
+    padding: 10vh;
+    }
+  } */
+
+ 
+  
+  /* @media (max-width: 700px) {
+    .intro {
+      font-size: 20px;
+      padding: 50px;
+    }
+    .buttons{
+      padding: 100px;
+    }
+  } */
