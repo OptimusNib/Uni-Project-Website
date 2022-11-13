@@ -340,6 +340,7 @@ header nav ul li {
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   transition: 1s ease;
+  text-decoration: underline;
 }
 
 
